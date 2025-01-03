@@ -8,6 +8,10 @@
 
 // 1.1 範例
 const alexAge = 25;
+const alexMembershipID = "GYM2024-12345";
+const isRunningOnTreadmill = true;
+console.log(alexAge,alexMembershipID,isRunningOnTreadmill)
+
 
 // ### 題目二：變數命名練習
 // - 瑜伽團課 - 300 元
@@ -16,10 +20,11 @@ const alexAge = 25;
 // 情境：Alex 這個月的運動預算有 3000 元
 // 請修改以下中文變數名稱，讓他符合變數語意
 
-const 變數一 = 300;
-const 變數二 = 500;
-const 變數三 = 1500;
-const 變數四 = 3000;
+const yogaClass = 300;
+const weightTraningClass = 500;
+const weightTraningTutoring = 1500;
+const monthlyBudget = 3000;
+
 
 // ### 題目三：變數計算
 // 呈上題，Alex 想要規劃好自己的運動課程，需符合以下三個條件，請將花費總數計算在 AlexBudget 上，一起幫幫他吧！
@@ -27,12 +32,27 @@ const 變數四 = 3000;
 // 條件二：瑜伽團課只能一次買 3 堂
 // 條件三：一定要花到 2400 以上，並購買 5 堂課程
 
+let AlexBudget = monthlyBudget - (yogaClass*3) - weightTraningClass - weightTraningTutoring
 console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
+
 
 // ### 題目四：線稿圖截圖，看圖宣告變數
 // 請參考資料夾內 q4.webp 圖片
 // 請依照你看到的內容來嘗試設計變數和值（至少 3 個）
 
+let packagePrice = 2520;
+let classPrice = 180;
+let classNum = 14;
+let classTime = 50;
+let discount = 0.9;
+let packagePlan = {
+packagePrice : 2520,
+classPrice : 180,
+classNum : 14,
+classTime : 50,
+discount : 0.9};
+
+  
 // ### 題目五：布林值與變數定義，看是否有用對 const, let
 // 情境：Alex 在往健身房的路上，望向城市的風景，請描述她看到的一切，並宣告變數與賦予值
 // 4-1. Alex 在等紅綠燈，他抬頭看一下現在是紅燈，還有 28 秒綠燈（最多 3 個宣告）
