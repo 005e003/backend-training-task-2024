@@ -146,46 +146,48 @@ if (outcome === "剪刀布" || outcome === "石頭剪刀" || outcome === "布石
 */
 
 const gymCoach = {
-  coachWang:{
-  name:'王教練',
-  goodAt:'力量訓練、減重課程',
-    Class:[
+  coachWang: {
+    name: "王教練",
+    goodAt: "力量訓練、減重課程",
+    Class: [
       {
-    type:'個人訓練課程',
-    perCharge:'2000元',
-    classDuration:'60分鐘',
-    isAvalable:true
-    },
-    {
-    type:'團體訓練課程',
-    perCharge:'1500元',
-    classDuration:'90分鐘',
-    isAvalable:false
-    }
-  ],
-    background:'王教練擁有 5 年教學經驗，專精於提升學員的肌力與減脂，適合希望快速達成體能目標的學員。',
-    isTakeNewStudent:true
+        type: "個人訓練課程",
+        perCharge: "2000元",
+        classDuration: "60分鐘",
+        isAvalable: true,
+      },
+      {
+        type: "團體訓練課程",
+        perCharge: "1500元",
+        classDuration: "90分鐘",
+        isAvalable: false,
+      },
+    ],
+    background:
+      "王教練擁有 5 年教學經驗，專精於提升學員的肌力與減脂，適合希望快速達成體能目標的學員。",
+    isTakeNewStudent: true,
   },
-  coachLee:{
-  name:'李教練',
-  goodAt:'瑜伽、體態雕塑',
-  Class:[
-    {
-    type:'個人訓練課程',
-    perCharge:'1800元',
-    classDuration:'50分鐘',
-    isAvalable:false
+  coachLee: {
+    name: "李教練",
+    goodAt: "瑜伽、體態雕塑",
+    Class: [
+      {
+        type: "個人訓練課程",
+        perCharge: "1800元",
+        classDuration: "50分鐘",
+        isAvalable: false,
+      },
+      {
+        type: "團體訓練課程",
+        perCharge: "1200元",
+        classDuration: "75分鐘",
+        isAvalable: true,
+      },
+    ],
+    background:
+      "李教練是一位瑜伽大師，擁有 10 年教學經驗，擅長幫助學員雕塑完美體態，適合希望改善姿態與柔軟度的學員。",
+    isTakeNewStudent: false,
   },
-    {
-    type:'團體訓練課程',
-    perCharge:'1200元',
-    classDuration:'75分鐘',
-    isAvalable:true
-  }],
-    background:'李教練是一位瑜伽大師，擁有 10 年教學經驗，擅長幫助學員雕塑完美體態，適合希望改善姿態與柔軟度的學員。',
-    isTakeNewStudent:false
-  }
-
 }; // 練習：使用物件變數定義兩位教練的資訊
 
 console.log(gymCoach);
@@ -233,18 +235,18 @@ console.log(performanceData);
   - 騎腳踏車每分鐘消耗 8 卡
 */
 const activities = {
-runningMachine:{
-  name:"跑步機",
-    perMinWorkOff:10
-},
-  yoga:{
-  name:"瑜珈",
-    perMinWorkOff:5},
-    ridingbike:{
-  name:"騎腳踏車",
-    perMinWorkOff:8}
-  
-  
+  runningMachine: {
+    name: "跑步機",
+    perMinWorkOff: 10,
+  },
+  yoga: {
+    name: "瑜珈",
+    perMinWorkOff: 5,
+  },
+  ridingbike: {
+    name: "騎腳踏車",
+    perMinWorkOff: 8,
+  },
 }; // 練習：使用 `物件包含物件` 的格式定義運動類型與每分鐘消耗卡路里
 
 // ## 題目九
